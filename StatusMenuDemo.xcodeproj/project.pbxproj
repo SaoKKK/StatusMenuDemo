@@ -11,6 +11,8 @@
 		B99931991DD834B6001AA419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B99931981DD834B6001AA419 /* main.m */; };
 		B999319B1DD834B6001AA419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B999319A1DD834B6001AA419 /* Assets.xcassets */; };
 		B999319E1DD834B7001AA419 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B999319C1DD834B7001AA419 /* MainMenu.xib */; };
+		B99931A71DD8987D001AA419 /* stIcon_hl.png in Resources */ = {isa = PBXBuildFile; fileRef = B99931A51DD8987D001AA419 /* stIcon_hl.png */; };
+		B99931A81DD8987D001AA419 /* stIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B99931A61DD8987D001AA419 /* stIcon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		B999319A1DD834B6001AA419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B999319D1DD834B7001AA419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		B999319F1DD834B7001AA419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B99931A51DD8987D001AA419 /* stIcon_hl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stIcon_hl.png; path = Graphics/stIcon_hl.png; sourceTree = "<group>"; };
+		B99931A61DD8987D001AA419 /* stIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stIcon.png; path = Graphics/stIcon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 				B99931941DD834B6001AA419 /* AppDelegate.h */,
 				B99931951DD834B6001AA419 /* AppDelegate.m */,
 				B999319A1DD834B6001AA419 /* Assets.xcassets */,
+				B99931A91DD8988B001AA419 /* Graphics */,
 				B999319C1DD834B7001AA419 /* MainMenu.xib */,
 				B999319F1DD834B7001AA419 /* Info.plist */,
 				B99931971DD834B6001AA419 /* Supporting Files */,
@@ -69,6 +74,15 @@
 				B99931981DD834B6001AA419 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B99931A91DD8988B001AA419 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				B99931A51DD8987D001AA419 /* stIcon_hl.png */,
+				B99931A61DD8987D001AA419 /* stIcon.png */,
+			);
+			name = Graphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B999319B1DD834B6001AA419 /* Assets.xcassets in Resources */,
+				B99931A81DD8987D001AA419 /* stIcon.png in Resources */,
+				B99931A71DD8987D001AA419 /* stIcon_hl.png in Resources */,
 				B999319E1DD834B7001AA419 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,6 +309,7 @@
 				B99931A41DD834B7001AA419 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
