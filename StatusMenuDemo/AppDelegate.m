@@ -12,7 +12,7 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    [self setUpStMenu1];
+    [self setUpStMenu];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
@@ -20,7 +20,7 @@
 }
 
 //ステータスメニュー項目を設定
-- (void)setUpStMenu1{
+- (void)setUpStMenu{
     NSStatusBar *sysStBar = [NSStatusBar systemStatusBar];
     _stItem = [sysStBar statusItemWithLength:NSVariableStatusItemLength];
     _stItem.image = [NSImage imageNamed:@"stIconTemplate.png"];
