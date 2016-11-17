@@ -1,11 +1,3 @@
-//
-//  AppDelegate.m
-//  StatusMenuDemo
-//
-//  Created by 河野 さおり on 2016/11/13.
-//  Copyright © 2016年 Saori Kohno. All rights reserved.
-//
-
 #import "AppDelegate.h"
 
 @interface AppDelegate (){
@@ -20,22 +12,21 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    [self setUpStMenu];
+    [self setUpStMenu1];
 }
-
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
 
 //ステータスメニュー項目を設定
-- (void)setUpStMenu{
+- (void)setUpStMenu1{
     NSStatusBar *sysStBar = [NSStatusBar systemStatusBar];
     _stItem = [sysStBar statusItemWithLength:NSVariableStatusItemLength];
-    [_stItem setHighlightMode:YES];
-    [_stItem setImage:[NSImage imageNamed:@"stIcon.png"]];
-    [_stItem setAlternateImage:[NSImage imageNamed:@"stIcon_hl.png"]];
-    [_stItem setMenu:stMenu];
+    _stItem.image = [NSImage imageNamed:@"stIconTemplate.png"];
+    _stItem.title = @"SMDemo";
+    _stItem.highlightMode = YES;
+    _stItem.menu = stMenu;
 }
 
 //メニューアクション
